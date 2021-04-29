@@ -1,0 +1,24 @@
+@use "sass:color";
+
+/**
+ * Variables
+ */
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Arial, Helvetica,
+  sans-serif;
+$font-family-headers: "Anton", sans-serif;
+
+$white: rgb(255, 255, 255);
+$grey: rgb(58, 57, 57);
+$light-grey: rgb(119, 118, 118);
+$black: rgb(0, 0, 0);
+
+$black-opacity-3: rgba(0, 0, 0, 0.3);
+$black-opacity-6: rgba(0, 0, 0, 0.6);
+$black-opacity-8: rgba(0, 0, 0, 0.8);
+$white-opacity-2: rgba(255, 255, 255, 0.2);
+$white-opacity-9: rgba(255, 255, 255, 0.9);
+
+$background: url("../images/background.png");
+
+$primary: rgba(117, 117, 117, 0.438);

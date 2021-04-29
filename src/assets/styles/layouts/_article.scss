@@ -1,0 +1,86 @@
+/* Estilos de article.html */
+
+.article-wrapper {
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 50%;
+  max-height: 80vh;
+  padding: 40px;
+  margin: 50px auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: justify;
+  background-color: $white-opacity-9;
+  border-radius: 5px;
+
+  p {
+    width: 90%;
+    margin: 0 auto 50px;
+  }
+
+  @include breakpoint(tablet) {
+    width: 80%;
+  }
+}
+
+.article-quote {
+  width: 70%;
+  padding: 0.5em 10px;
+  margin: 50px auto;
+  color: $white;
+  quotes: "\201C""\201D""\2018""\2019";
+  background-color: $black-opacity-8;
+  border-left: 10px solid $white-opacity-2;
+  border-radius: 5px;
+
+  &:before {
+    margin-right: 0.25em;
+    font-size: 4em;
+    line-height: 0.1em;
+    color: $white;
+    vertical-align: -0.4em;
+    content: open-quote;
+  }
+
+  p {
+    display: inline;
+  }
+}
+
+.article-img {
+  display: flex;
+  width: 100%;
+  margin: 50px auto 100px;
+}
+
+.article-title {
+  width: 50%;
+  padding-bottom: 15px;
+  margin: 0 auto 40px;
+  font-family: Anton, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000;
+}
+
+/* Estilos para editar componentes de Bootstrap */
+
+/* Lista de Titles en article.html */
+
+.list-group {
+  width: 100px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: none;
+}
+
+.list-group-item {
+  background-color: unset;
+  border: unset;
+
+  &:hover {
+    background-color: unset;
+    border: unset;
+  }
+}

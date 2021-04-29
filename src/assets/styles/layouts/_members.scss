@@ -1,0 +1,45 @@
+/* Estilos de members.html */
+
+.flex-left {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto 150px 0;
+  background-color: $white-opacity-9;
+  border-radius: 5px;
+
+  .profile-picture {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  @include breakpoint(laptop) {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+}
+
+.flex-right {
+  width: 80%;
+  padding: 20px;
+  margin: 0 0 150px auto;
+  background-color: $white-opacity-9;
+  border-radius: 5px;
+
+  .profile-picture {
+    float: right;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  @include breakpoint(laptop) {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+}
+
+.member-name {
+  display: inline;
+  font-family: $font-family-headers;
+  text-transform: uppercase;
+}

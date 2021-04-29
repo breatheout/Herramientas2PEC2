@@ -1,0 +1,106 @@
+/* Estilos merch.html */
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  padding: 100px auto;
+  margin: 100px auto;
+
+  @include breakpoint(laptop) {
+    justify-content: center;
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+
+.store-item {
+  display: flex;
+  width: 280px;
+  height: 280px;
+  margin: 30px;
+  background-color: $black;
+  background-image: url("../images/pexels-cottonbro-4066293-RESIZE.jpg");
+
+  @include breakpoint(laptop) {
+    display: flex;
+    width: 240px;
+    height: 240px;
+    margin: 30px;
+    background-color: $black;
+  }
+}
+
+.custom-button {
+  position: relative;
+  top: 80%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 45px;
+  margin: -20px -50px;
+  font-family: Anton, sans-serif;
+  color: $white;
+  text-transform: uppercase;
+  border: 1px solid $white;
+
+  &:hover {
+    color: $white;
+    background: $white-opacity-2;
+  }
+}
+
+.sold {
+  color: $light-grey;
+  pointer-events: none;
+  border: 1px solid $light-grey;
+
+  &:hover {
+    color: $light-grey;
+    pointer-events: none;
+    background: $black-opacity-6;
+  }
+}
+
+.title-header {
+  font-family: $font-family-headers;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.centered-title-wrapper {
+  padding: 50px;
+  background-color: $black-opacity-8;
+}
+
+.store-item-info {
+  position: relative;
+  top: 80%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  margin: -200px -75px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+/* Estilos para editar componentes de Bootstrap */
+
+/* Container para el formulario */
+
+.container {
+  color: $white;
+}
+
+/* Estilos para aumentar el espacio entre elementos del formulario */
+
+.form-group,
+.form-check {
+  margin: 10px;
+}

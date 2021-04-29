@@ -1,0 +1,83 @@
+/* Código de Wes Bos @ https://wesbos.com/ para los estilos del nav */
+
+/* Some CSS Setup - nothing to do with flexbox */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  background-color: $black;
+  background-image: $background;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 5px;
+  font-weight: 100;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background: $black-opacity-6;
+  transition: all 0.5s;
+
+  &:hover {
+    color: $white;
+    background: $black-opacity-3;
+  }
+}
+
+.wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+/* Flex Box Starts Here! */
+
+/* Flex Container */
+.flex-nav {
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid $black;
+
+    @include breakpoint(tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  /* Flex Item */
+  li {
+    flex: 3;
+
+    @include breakpoint(tablet) {
+      flex: 1 1 50%;
+    }
+
+    @include breakpoint(mobileonly) {
+      flex-basis: 100%;
+    }
+  }
+
+  .social {
+    flex: 1;
+
+    @include breakpoint(tablet) {
+      flex: 1 1 25%;
+    }
+  }
+}
